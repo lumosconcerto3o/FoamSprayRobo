@@ -1,0 +1,1 @@
+Invoking command in '/home/lumos/pp_ws/build/bim_interface': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/lumos/pp_ws/src/bim_interface -DCMAKE_INSTALL_PREFIX=/home/lumos/pp_ws/install/bim_interface

@@ -1,0 +1,44 @@
+[0.011s] Invoking command in '/home/lumos/pp_ws/build/robot_insulation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/lumos/pp_ws/src/robot_insulation -DCMAKE_INSTALL_PREFIX=/home/lumos/pp_ws/install/robot_insulation
+[0.122s] -- The C compiler identification is GNU 13.3.0
+[0.238s] -- The CXX compiler identification is GNU 13.3.0
+[0.262s] -- Detecting C compiler ABI info
+[0.368s] -- Detecting C compiler ABI info - done
+[0.378s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.378s] -- Detecting C compile features
+[0.378s] -- Detecting C compile features - done
+[0.388s] -- Detecting CXX compiler ABI info
+[0.505s] -- Detecting CXX compiler ABI info - done
+[0.515s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.515s] -- Detecting CXX compile features
+[0.515s] -- Detecting CXX compile features - done
+[0.518s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.663s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.798s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.838s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.851s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.867s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.886s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.965s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.969s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.064s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.088s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.117s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.202s] [31mCMake Error at CMakeLists.txt:7 (find_package):
+[1.203s]   By not providing "Findmoveit_core.cmake" in CMAKE_MODULE_PATH this project
+[1.203s]   has asked CMake to find a package configuration file provided by
+[1.203s]   "moveit_core", but CMake did not find one.
+[1.203s] 
+[1.203s]   Could not find a package configuration file provided by "moveit_core" with
+[1.203s]   any of the following names:
+[1.203s] 
+[1.204s]     moveit_coreConfig.cmake
+[1.204s]     moveit_core-config.cmake
+[1.204s] 
+[1.204s]   Add the installation prefix of "moveit_core" to CMAKE_PREFIX_PATH or set
+[1.204s]   "moveit_core_DIR" to a directory containing one of the above files.  If
+[1.204s]   "moveit_core" provides a separate development package or SDK, be sure it
+[1.205s]   has been installed.
+[1.205s] 
+[1.205s] [0m
+[1.205s] -- Configuring incomplete, errors occurred!
+[1.212s] Invoked command in '/home/lumos/pp_ws/build/robot_insulation' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/lumos/pp_ws/src/robot_insulation -DCMAKE_INSTALL_PREFIX=/home/lumos/pp_ws/install/robot_insulation

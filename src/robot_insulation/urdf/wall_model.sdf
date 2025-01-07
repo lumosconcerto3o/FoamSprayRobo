@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="wall_model">
+    <!-- Material Definitions -->
+    <material>
+      <script>
+        <uri>file://media/materials/scripts/gazebo.material</uri>
+        <name>Gazebo/Grey</name>
+      </script>
+    </material>
+    <material>
+      <script>
+        <uri>file://media/materials/scripts/gazebo.material</uri>
+        <name>Gazebo/Red</name>
+      </script>
+    </material>
+    <material>
+      <script>
+        <uri>file://media/materials/scripts/gazebo.material</uri>
+        <name>Gazebo/White</name>
+      </script>
+    </material>
+
+    <!-- Flat Wall -->
+    <link name="flat_wall">
+      <!-- Base Wall Layer -->
+      <visual name="flat_wall_base">
+        <pose>0 0 0.05 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.0 0.1 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+          </script>
+        </material>
+      </visual>
+      <collision name="flat_wall_collision">
+        <pose>0 0 0.05 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.0 0.1 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      
+      <!-- Insulation Layer -->
+      <visual name="flat_wall_insulation">
+        <pose>0 0 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.0 0.1 0.02</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <!-- Sloped Wall -->
+    <link name="sloped_wall">
+      <pose>2.5 0 0 0 0.785 0</pose>
+      <!-- Base Wall Layer -->
+      <visual name="sloped_wall_base">
+        <pose>0 0 0.05 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.0 0.1 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+          </script>
+        </material>
+      </visual>
+      <collision name="sloped_wall_collision">
+        <pose>0 0 0.05 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.0 0.1 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      
+      <!-- Insulation Layer -->
+      <visual name="sloped_wall_insulation">
+        <pose>0 0 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.0 0.1 0.02</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <!-- Attic Wall (Combination) -->
+    <link name="attic_wall">
+      <pose>5.0 0 0 0 0 0</pose>
+      <!-- Flat Section -->
+      <visual name="attic_flat_base">
+        <pose>0 0 0.05 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.0 0.1 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+          </script>
+        </material>
+      </visual>
+      <collision name="attic_flat_collision">
+        <pose>0 0 0.05 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.0 0.1 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      
+      <!-- Sloped Section -->
+      <visual name="attic_sloped_base">
+        <pose>1.0 0 0.05 0 0.785 0</pose>
+        <geometry>
+          <box>
+            <size>1.0 0.1 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+          </script>
+        </material>
+      </visual>
+      <collision name="attic_sloped_collision">
+        <pose>1.0 0 0.05 0 0.785 0</pose>
+        <geometry>
+          <box>
+            <size>1.0 0.1 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+      
+      <!-- Insulation Layer -->
+      <visual name="attic_insulation">
+        <pose>0 0 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.0 0.1 0.02</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

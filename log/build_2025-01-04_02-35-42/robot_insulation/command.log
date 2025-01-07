@@ -1,0 +1,2 @@
+Invoking command in '/home/lumos/pp_ws/build/robot_insulation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/lumos/pp_ws/src/robot_insulation -DCMAKE_INSTALL_PREFIX=/home/lumos/pp_ws/install/robot_insulation
+Invoked command in '/home/lumos/pp_ws/build/robot_insulation' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/lumos/pp_ws/src/robot_insulation -DCMAKE_INSTALL_PREFIX=/home/lumos/pp_ws/install/robot_insulation

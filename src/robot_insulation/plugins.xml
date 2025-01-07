@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<library path="kuka_iiwa_hardware">
+  <class name="kuka_iiwa_hardware/KukaIiwaHardware" 
+         type="kuka_iiwa_hardware::KukaIiwaHardware" 
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      KUKA IIWA hardware interface for ros2_control
+    </description>
+  </class>
+</library>

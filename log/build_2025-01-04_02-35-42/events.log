@@ -1,0 +1,229 @@
+[0.000000] (-) TimerEvent: {}
+[0.000313] (bim_interface) JobQueued: {'identifier': 'bim_interface', 'dependencies': OrderedDict()}
+[0.000397] (robot_insulation) JobQueued: {'identifier': 'robot_insulation', 'dependencies': OrderedDict()}
+[0.000455] (visualization) JobQueued: {'identifier': 'visualization', 'dependencies': OrderedDict()}
+[0.000504] (bim_interface) JobStarted: {'identifier': 'bim_interface'}
+[0.006984] (robot_insulation) JobStarted: {'identifier': 'robot_insulation'}
+[0.010154] (visualization) JobStarted: {'identifier': 'visualization'}
+[0.014110] (bim_interface) JobProgress: {'identifier': 'bim_interface', 'progress': 'cmake'}
+[0.014703] (bim_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/lumos/pp_ws/src/bim_interface', '-DCMAKE_INSTALL_PREFIX=/home/lumos/pp_ws/install/bim_interface'], 'cwd': '/home/lumos/pp_ws/build/bim_interface', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lumos', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/lumos', 'OLDPWD': '/home/lumos/pp_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1708', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=82f82eb90058917d626e91c76777f441', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'lumos', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lumos', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/lumos/.local/bin:/home/lumos/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lumos/.fzf/bin', 'SESSION_MANAGER': 'local/Gestalt:@/tmp/.ICE-unix/1708,unix/Gestalt:/tmp/.ICE-unix/1708', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/556ce06d_a4d4_4114_976c_a29cbb22979b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.8XRPZ2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.339', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/lumos/pp_ws/build/bim_interface', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=82f82eb90058917d626e91c76777f441', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor::/opt/ros/foxy/share'}), 'shell': False}
+[0.016793] (robot_insulation) JobProgress: {'identifier': 'robot_insulation', 'progress': 'cmake'}
+[0.017203] (robot_insulation) Command: {'cmd': ['/usr/bin/cmake', '/home/lumos/pp_ws/src/robot_insulation', '-DCMAKE_INSTALL_PREFIX=/home/lumos/pp_ws/install/robot_insulation'], 'cwd': '/home/lumos/pp_ws/build/robot_insulation', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lumos', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/lumos', 'OLDPWD': '/home/lumos/pp_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1708', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=82f82eb90058917d626e91c76777f441', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'lumos', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lumos', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/lumos/.local/bin:/home/lumos/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lumos/.fzf/bin', 'SESSION_MANAGER': 'local/Gestalt:@/tmp/.ICE-unix/1708,unix/Gestalt:/tmp/.ICE-unix/1708', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/556ce06d_a4d4_4114_976c_a29cbb22979b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.8XRPZ2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.339', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/lumos/pp_ws/build/robot_insulation', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=82f82eb90058917d626e91c76777f441', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor::/opt/ros/foxy/share'}), 'shell': False}
+[0.020314] (visualization) JobProgress: {'identifier': 'visualization', 'progress': 'cmake'}
+[0.020716] (visualization) Command: {'cmd': ['/usr/bin/cmake', '/home/lumos/pp_ws/src/visualization', '-DCMAKE_INSTALL_PREFIX=/home/lumos/pp_ws/install/visualization'], 'cwd': '/home/lumos/pp_ws/build/visualization', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lumos', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/lumos', 'OLDPWD': '/home/lumos/pp_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1708', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=82f82eb90058917d626e91c76777f441', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'lumos', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lumos', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/lumos/.local/bin:/home/lumos/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lumos/.fzf/bin', 'SESSION_MANAGER': 'local/Gestalt:@/tmp/.ICE-unix/1708,unix/Gestalt:/tmp/.ICE-unix/1708', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/556ce06d_a4d4_4114_976c_a29cbb22979b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.8XRPZ2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.339', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/lumos/pp_ws/build/visualization', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=82f82eb90058917d626e91c76777f441', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor::/opt/ros/foxy/share'}), 'shell': False}
+[0.099260] (-) TimerEvent: {}
+[0.128845] (robot_insulation) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.129506] (bim_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.133409] (visualization) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199391] (-) TimerEvent: {}
+[0.231281] (bim_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.231759] (visualization) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.244444] (robot_insulation) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.256948] (bim_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.257182] (visualization) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.269171] (robot_insulation) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299526] (-) TimerEvent: {}
+[0.358318] (bim_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.360068] (visualization) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.372167] (bim_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.372571] (bim_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.373425] (bim_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.373961] (visualization) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.374291] (visualization) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.374810] (visualization) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.375085] (robot_insulation) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.384417] (robot_insulation) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.384666] (robot_insulation) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.384786] (bim_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.384940] (robot_insulation) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.386360] (visualization) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.394766] (robot_insulation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399650] (-) TimerEvent: {}
+[0.495131] (visualization) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.499762] (-) TimerEvent: {}
+[0.503030] (bim_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.505855] (visualization) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.506258] (visualization) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.506593] (visualization) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.509566] (visualization) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.511968] (robot_insulation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.521467] (robot_insulation) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.521856] (robot_insulation) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.522144] (robot_insulation) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.524655] (robot_insulation) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.527215] (bim_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.527734] (bim_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.528939] (bim_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.534994] (bim_interface) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.599931] (-) TimerEvent: {}
+[0.669513] (robot_insulation) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.681980] (visualization) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.698385] (bim_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.700013] (-) TimerEvent: {}
+[0.800257] (-) TimerEvent: {}
+[0.804439] (robot_insulation) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.833543] (visualization) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:8 (install):\n'}
+[0.833854] (visualization) StderrLine: {'line': b'  install PROGRAMS given directory "scripts/" to install.\n'}
+[0.834052] (visualization) StderrLine: {'line': b'\n'}
+[0.834211] (visualization) StderrLine: {'line': b'\x1b[0m\n'}
+[0.844742] (robot_insulation) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.858319] (robot_insulation) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.874148] (robot_insulation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.892561] (robot_insulation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.895159] (bim_interface) StderrLine: {'line': b"Error parsing '/home/lumos/pp_ws/src/bim_interface/package.xml':\n"}
+[0.900420] (-) TimerEvent: {}
+[0.914149] (visualization) StderrLine: {'line': b"Error parsing '/home/lumos/pp_ws/src/visualization/package.xml':\n"}
+[0.972151] (robot_insulation) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.975355] (robot_insulation) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.000580] (-) TimerEvent: {}
+[1.071185] (robot_insulation) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[1.094862] (robot_insulation) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[1.100699] (-) TimerEvent: {}
+[1.123837] (robot_insulation) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.200874] (-) TimerEvent: {}
+[1.209141] (robot_insulation) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:7 (find_package):\n'}
+[1.209445] (robot_insulation) StderrLine: {'line': b'  By not providing "Findmoveit_core.cmake" in CMAKE_MODULE_PATH this project\n'}
+[1.209605] (robot_insulation) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[1.209753] (robot_insulation) StderrLine: {'line': b'  "moveit_core", but CMake did not find one.\n'}
+[1.209915] (robot_insulation) StderrLine: {'line': b'\n'}
+[1.210075] (robot_insulation) StderrLine: {'line': b'  Could not find a package configuration file provided by "moveit_core" with\n'}
+[1.210222] (robot_insulation) StderrLine: {'line': b'  any of the following names:\n'}
+[1.210368] (robot_insulation) StderrLine: {'line': b'\n'}
+[1.210514] (robot_insulation) StderrLine: {'line': b'    moveit_coreConfig.cmake\n'}
+[1.210661] (robot_insulation) StderrLine: {'line': b'    moveit_core-config.cmake\n'}
+[1.210807] (robot_insulation) StderrLine: {'line': b'\n'}
+[1.210974] (robot_insulation) StderrLine: {'line': b'  Add the installation prefix of "moveit_core" to CMAKE_PREFIX_PATH or set\n'}
+[1.211129] (robot_insulation) StderrLine: {'line': b'  "moveit_core_DIR" to a directory containing one of the above files.  If\n'}
+[1.211276] (robot_insulation) StderrLine: {'line': b'  "moveit_core" provides a separate development package or SDK, be sure it\n'}
+[1.211422] (robot_insulation) StderrLine: {'line': b'  has been installed.\n'}
+[1.211568] (robot_insulation) StderrLine: {'line': b'\n'}
+[1.211714] (robot_insulation) StderrLine: {'line': b'\x1b[0m\n'}
+[1.211862] (robot_insulation) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.218695] (robot_insulation) CommandEnded: {'returncode': 1}
+[1.219644] (robot_insulation) JobEnded: {'identifier': 'robot_insulation', 'rc': 1}
+[1.301329] (-) TimerEvent: {}
+[1.401981] (-) TimerEvent: {}
+[1.502655] (-) TimerEvent: {}
+[1.603036] (-) TimerEvent: {}
+[1.703477] (-) TimerEvent: {}
+[1.804394] (-) TimerEvent: {}
+[1.905076] (-) TimerEvent: {}
+[2.006063] (-) TimerEvent: {}
+[2.106741] (-) TimerEvent: {}
+[2.207356] (-) TimerEvent: {}
+[2.307983] (-) TimerEvent: {}
+[2.408660] (-) TimerEvent: {}
+[2.509319] (-) TimerEvent: {}
+[2.609985] (-) TimerEvent: {}
+[2.710547] (-) TimerEvent: {}
+[2.811191] (-) TimerEvent: {}
+[2.911778] (-) TimerEvent: {}
+[3.012411] (-) TimerEvent: {}
+[3.112972] (-) TimerEvent: {}
+[3.213479] (-) TimerEvent: {}
+[3.313843] (-) TimerEvent: {}
+[3.414338] (-) TimerEvent: {}
+[3.514977] (-) TimerEvent: {}
+[3.615498] (-) TimerEvent: {}
+[3.716007] (-) TimerEvent: {}
+[3.816542] (-) TimerEvent: {}
+[3.917214] (-) TimerEvent: {}
+[4.017701] (-) TimerEvent: {}
+[4.118200] (-) TimerEvent: {}
+[4.218629] (-) TimerEvent: {}
+[4.319124] (-) TimerEvent: {}
+[4.419971] (-) TimerEvent: {}
+[4.520554] (-) TimerEvent: {}
+[4.621347] (-) TimerEvent: {}
+[4.722284] (-) TimerEvent: {}
+[4.823115] (-) TimerEvent: {}
+[4.901867] (bim_interface) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[4.902348] (bim_interface) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string\n'}
+[4.902874] (bim_interface) StderrLine: {'line': b'    root = dom.parseString(data)\n'}
+[4.903107] (bim_interface) StderrLine: {'line': b'           ^^^^^^^^^^^^^^^^^^^^^\n'}
+[4.903270] (bim_interface) StderrLine: {'line': b'  File "/usr/lib/python3.12/xml/dom/minidom.py", line 2000, in parseString\n'}
+[4.903432] (bim_interface) StderrLine: {'line': b'    return expatbuilder.parseString(string)\n'}
+[4.903589] (bim_interface) StderrLine: {'line': b'           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'}
+[4.903744] (bim_interface) StderrLine: {'line': b'  File "/usr/lib/python3.12/xml/dom/expatbuilder.py", line 922, in parseString\n'}
+[4.903918] (bim_interface) StderrLine: {'line': b'    return builder.parseString(string)\n'}
+[4.904088] (bim_interface) StderrLine: {'line': b'           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'}
+[4.904242] (bim_interface) StderrLine: {'line': b'  File "/usr/lib/python3.12/xml/dom/expatbuilder.py", line 220, in parseString\n'}
+[4.904393] (bim_interface) StderrLine: {'line': b'    parser.Parse(string, True)\n'}
+[4.904544] (bim_interface) StderrLine: {'line': b'xml.parsers.expat.ExpatError: no element found: line 1, column 0\n'}
+[4.904696] (bim_interface) StderrLine: {'line': b'\n'}
+[4.904848] (bim_interface) StderrLine: {'line': b'During handling of the above exception, another exception occurred:\n'}
+[4.905030] (bim_interface) StderrLine: {'line': b'\n'}
+[4.905189] (bim_interface) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[4.905344] (bim_interface) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>\n'}
+[4.905498] (bim_interface) StderrLine: {'line': b'    main()\n'}
+[4.905649] (bim_interface) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main\n'}
+[4.905801] (bim_interface) StderrLine: {'line': b'    raise e\n'}
+[4.905986] (bim_interface) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main\n'}
+[4.906145] (bim_interface) StderrLine: {'line': b'    package = parse_package_string(\n'}
+[4.906297] (bim_interface) StderrLine: {'line': b'              ^^^^^^^^^^^^^^^^^^^^^\n'}
+[4.906450] (bim_interface) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string\n'}
+[4.906605] (bim_interface) StderrLine: {'line': b"    raise InvalidPackage('The manifest contains invalid XML:\\n%s' % ex, filename)\n"}
+[4.906925] (bim_interface) StderrLine: {'line': b"catkin_pkg.package.InvalidPackage: Error(s) in package '/home/lumos/pp_ws/src/bim_interface/package.xml':\n"}
+[4.907113] (bim_interface) StderrLine: {'line': b'The manifest contains invalid XML:\n'}
+[4.907259] (bim_interface) StderrLine: {'line': b'no element found: line 1, column 0\n'}
+[4.923268] (-) TimerEvent: {}
+[4.972677] (bim_interface) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[4.973108] (bim_interface) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[4.973275] (bim_interface) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[4.973426] (bim_interface) StderrLine: {'line': b'  /home/lumos/pp_ws/src/bim_interface/package.xml\n'}
+[4.973574] (bim_interface) StderrLine: {'line': b'  /home/lumos/pp_ws/build/bim_interface/ament_cmake_core/package.cmake)\n'}
+[4.973720] (bim_interface) StderrLine: {'line': b'  returned error code 1\n'}
+[4.973866] (bim_interface) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.974044] (bim_interface) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[4.974196] (bim_interface) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)\n'}
+[4.974341] (bim_interface) StderrLine: {'line': b'  CMakeLists.txt:13 (ament_package)\n'}
+[4.974484] (bim_interface) StderrLine: {'line': b'\n'}
+[4.974630] (bim_interface) StderrLine: {'line': b'\x1b[0m\n'}
+[4.974775] (bim_interface) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[4.984479] (bim_interface) JobEnded: {'identifier': 'bim_interface', 'rc': 'SIGINT'}
+[5.023444] (-) TimerEvent: {}
+[5.058231] (visualization) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[5.058879] (visualization) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string\n'}
+[5.059131] (visualization) StderrLine: {'line': b'    root = dom.parseString(data)\n'}
+[5.059300] (visualization) StderrLine: {'line': b'           ^^^^^^^^^^^^^^^^^^^^^\n'}
+[5.059459] (visualization) StderrLine: {'line': b'  File "/usr/lib/python3.12/xml/dom/minidom.py", line 2000, in parseString\n'}
+[5.059619] (visualization) StderrLine: {'line': b'    return expatbuilder.parseString(string)\n'}
+[5.059775] (visualization) StderrLine: {'line': b'           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'}
+[5.059981] (visualization) StderrLine: {'line': b'  File "/usr/lib/python3.12/xml/dom/expatbuilder.py", line 922, in parseString\n'}
+[5.060161] (visualization) StderrLine: {'line': b'    return builder.parseString(string)\n'}
+[5.060347] (visualization) StderrLine: {'line': b'           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'}
+[5.060510] (visualization) StderrLine: {'line': b'  File "/usr/lib/python3.12/xml/dom/expatbuilder.py", line 220, in parseString\n'}
+[5.060668] (visualization) StderrLine: {'line': b'    parser.Parse(string, True)\n'}
+[5.060844] (visualization) StderrLine: {'line': b'xml.parsers.expat.ExpatError: no element found: line 1, column 0\n'}
+[5.061092] (visualization) StderrLine: {'line': b'\n'}
+[5.061274] (visualization) StderrLine: {'line': b'During handling of the above exception, another exception occurred:\n'}
+[5.061433] (visualization) StderrLine: {'line': b'\n'}
+[5.061589] (visualization) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[5.061743] (visualization) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>\n'}
+[5.061917] (visualization) StderrLine: {'line': b'    main()\n'}
+[5.062090] (visualization) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main\n'}
+[5.062247] (visualization) StderrLine: {'line': b'    raise e\n'}
+[5.062400] (visualization) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main\n'}
+[5.062669] (visualization) StderrLine: {'line': b'    package = parse_package_string(\n'}
+[5.062850] (visualization) StderrLine: {'line': b'              ^^^^^^^^^^^^^^^^^^^^^\n'}
+[5.063047] (visualization) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string\n'}
+[5.063301] (visualization) StderrLine: {'line': b"    raise InvalidPackage('The manifest contains invalid XML:\\n%s' % ex, filename)\n"}
+[5.063450] (visualization) StderrLine: {'line': b"catkin_pkg.package.InvalidPackage: Error(s) in package '/home/lumos/pp_ws/src/visualization/package.xml':\n"}
+[5.063599] (visualization) StderrLine: {'line': b'The manifest contains invalid XML:\n'}
+[5.063747] (visualization) StderrLine: {'line': b'no element found: line 1, column 0\n'}
+[5.113023] (visualization) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[5.113380] (visualization) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[5.113666] (visualization) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[5.113897] (visualization) StderrLine: {'line': b'  /home/lumos/pp_ws/src/visualization/package.xml\n'}
+[5.114134] (visualization) StderrLine: {'line': b'  /home/lumos/pp_ws/build/visualization/ament_cmake_core/package.cmake)\n'}
+[5.114340] (visualization) StderrLine: {'line': b'  returned error code 1\n'}
+[5.114531] (visualization) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.114728] (visualization) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[5.114946] (visualization) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)\n'}
+[5.115155] (visualization) StderrLine: {'line': b'  CMakeLists.txt:13 (ament_package)\n'}
+[5.115349] (visualization) StderrLine: {'line': b'\n'}
+[5.115544] (visualization) StderrLine: {'line': b'\x1b[0m\n'}
+[5.115796] (visualization) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[5.123639] (-) TimerEvent: {}
+[5.126762] (visualization) JobEnded: {'identifier': 'visualization', 'rc': 'SIGINT'}
+[5.137557] (-) EventReactorShutdown: {}

@@ -1,0 +1,58 @@
+[0.016s] Invoking command in '/home/lumos/pp_ws/build/bim_interface': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/lumos/pp_ws/src/bim_interface -DCMAKE_INSTALL_PREFIX=/home/lumos/pp_ws/install/bim_interface
+[0.129s] -- The C compiler identification is GNU 13.3.0
+[0.231s] -- The CXX compiler identification is GNU 13.3.0
+[0.257s] -- Detecting C compiler ABI info
+[0.358s] -- Detecting C compiler ABI info - done
+[0.372s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.372s] -- Detecting C compile features
+[0.373s] -- Detecting C compile features - done
+[0.384s] -- Detecting CXX compiler ABI info
+[0.503s] -- Detecting CXX compiler ABI info - done
+[0.527s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.527s] -- Detecting CXX compile features
+[0.528s] -- Detecting CXX compile features - done
+[0.535s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.698s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.895s] Error parsing '/home/lumos/pp_ws/src/bim_interface/package.xml':
+[4.902s] Traceback (most recent call last):
+[4.902s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string
+[4.903s]     root = dom.parseString(data)
+[4.903s]            ^^^^^^^^^^^^^^^^^^^^^
+[4.903s]   File "/usr/lib/python3.12/xml/dom/minidom.py", line 2000, in parseString
+[4.903s]     return expatbuilder.parseString(string)
+[4.903s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[4.903s]   File "/usr/lib/python3.12/xml/dom/expatbuilder.py", line 922, in parseString
+[4.904s]     return builder.parseString(string)
+[4.904s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[4.904s]   File "/usr/lib/python3.12/xml/dom/expatbuilder.py", line 220, in parseString
+[4.904s]     parser.Parse(string, True)
+[4.904s] xml.parsers.expat.ExpatError: no element found: line 1, column 0
+[4.904s] 
+[4.904s] During handling of the above exception, another exception occurred:
+[4.905s] 
+[4.905s] Traceback (most recent call last):
+[4.905s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[4.905s]     main()
+[4.905s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[4.905s]     raise e
+[4.906s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[4.906s]     package = parse_package_string(
+[4.906s]               ^^^^^^^^^^^^^^^^^^^^^
+[4.906s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string
+[4.906s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[4.907s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/lumos/pp_ws/src/bim_interface/package.xml':
+[4.907s] The manifest contains invalid XML:
+[4.907s] no element found: line 1, column 0
+[4.973s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[4.973s]   execute_process(/usr/bin/python3
+[4.973s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[4.973s]   /home/lumos/pp_ws/src/bim_interface/package.xml
+[4.973s]   /home/lumos/pp_ws/build/bim_interface/ament_cmake_core/package.cmake)
+[4.973s]   returned error code 1
+[4.973s] Call Stack (most recent call first):
+[4.974s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[4.974s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[4.974s]   CMakeLists.txt:13 (ament_package)
+[4.974s] 
+[4.974s] [0m
+[4.974s] -- Configuring incomplete, errors occurred!

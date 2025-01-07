@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  ros2:
+    container_name: 22lts
+    build: .
+    volumes:
+      - ./src:/home/rosuser/ws/src
+    environment:
+      - DISPLAY=${DISPLAY}
+    network_mode: host
+    privileged: true
+    tty: true
+    stdin_open: true

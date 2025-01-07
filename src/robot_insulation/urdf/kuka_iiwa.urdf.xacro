@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="kuka_iiwa">
+
+  <!-- Include iiwa7 model -->
+  <xacro:include filename="$(find robot_insulation)/urdf/iiwa7.xacro"/>
+  
+  <!-- Include gazebo plugins -->
+  <xacro:include filename="$(find robot_insulation)/urdf/iiwa.gazebo.xacro"/>
+
+  <!-- ROS2 Control Configuration -->
+  <xacro:property name="hardware_interface" value="PositionJointInterface"/>
+  
+  <!-- Gazebo ROS2 Control Plugin -->
+  <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <robot_namespace>/kuka_iiwa</robot_namespace>
+      <parameters>$(find robot_insulation)/config/controllers.yaml</parameters>
+      <control_period>0.001</control_period>
+    </plugin>
+  </gazebo>
+
+  <!-- Define the robot -->
+  <xacro:iiwa7 parent="world" hardware_interface="${hardware_interface}" robot_name="kuka_iiwa">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </xacro:iiwa7>
+
+</robot>
